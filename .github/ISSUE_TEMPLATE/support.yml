@@ -1,0 +1,32 @@
+name: Support request
+description: Ask a question or report a problem with KEMI Send.
+title: "[Support] "
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for using KEMI Send. Please do not include passwords or private files.
+  - type: input
+    id: version
+    attributes:
+      label: KEMI Send version
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or problem
+      description: Explain what you expected and what happened.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps in order, if applicable.
